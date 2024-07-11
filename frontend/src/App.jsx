@@ -1,11 +1,11 @@
-import UserForm from './components/UserForm'
+import UploadImage from './components/UploadImage'
 
 
 function App() {
 
   return (
     <>
-<UserForm/>
+      <UploadImage />
     </>
   )
 }

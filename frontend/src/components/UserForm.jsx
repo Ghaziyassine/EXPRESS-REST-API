@@ -7,6 +7,8 @@ import { addUser } from '../features/user/userSlice';
 const UserForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  
+
   const dispatch = useDispatch();
   const { loading, error } = useSelector((state) => state.user);
 
@@ -15,6 +17,8 @@ const UserForm = () => {
     dispatch(addUser({ name, email }));
   };
 
+
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
